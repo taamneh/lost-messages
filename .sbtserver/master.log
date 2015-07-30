@@ -3323,3 +3323,507 @@ Created C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\.idea_modules/
 Created C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\.idea_modules/lost-messages-build.iml
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/C:/Users/Salah/Desktop/activator-dist-1.3.5/lost-messages/}lost-messages/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c137efa, check cycles: false
+Read from stdout: Updating {file:/C:/Users/Salah/Desktop/activator-dist-1.3.5/lost-messages/}lost-messages...
+Updating {file:/C:/Users/Salah/Desktop/activator-dist-1.3.5/lost-messages/}lost-messages...
+Other repositories:
+Default repositories:
+Using inline dependencies specified in Scala.
+:: resolving dependencies :: default#lost-messages_2.11;1.0
+	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+	validate = true
+	refresh = false
+resolving dependencies for configuration 'compile'
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+Read from stdout: Resolving org.scala-lang#scala-library;2.11.6 ...
+Resolving org.scala-lang#scala-library;2.11.6 ...
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b8d1d2c
+sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6
+	found org.scala-lang#scala-library;2.11.6 in sbt-chain
+	[2.11.6] org.scala-lang#scala-library;2.11.6
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
+Read from stdout: Resolving com.typesafe.akka#akka-actor_2.11;2.3.11 ...
+Resolving com.typesafe.akka#akka-actor_2.11;2.3.11 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.3.11 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.3.11
+	found com.typesafe.akka#akka-actor_2.11;2.3.11 in sbt-chain
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->master(*)]
+Read from stdout: Resolving com.typesafe#config;1.2.1 ...
+Resolving com.typesafe#config;1.2.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
+	found com.typesafe#config;1.2.1 in sbt-chain
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
+resolving dependencies for configuration 'runtime'
+== resolving dependencies for default#lost-messages_2.11;1.0 [runtime]
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
+resolving dependencies for configuration 'test'
+== resolving dependencies for default#lost-messages_2.11;1.0 [test]
+== resolving dependencies for default#lost-messages_2.11;1.0 [runtime]
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->default(compile)]
+Read from stdout: Resolving com.typesafe.akka#akka-testkit_2.11;2.3.11 ...
+Resolving com.typesafe.akka#akka-testkit_2.11;2.3.11 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-testkit_2.11;2.3.11 {test=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2.3.11
+	found com.typesafe.akka#akka-testkit_2.11;2.3.11 in sbt-chain
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->master]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->default(compile)]
+Read from stdout: Resolving org.scalatest#scalatest_2.11;2.2.4 ...
+Resolving org.scalatest#scalatest_2.11;2.2.4 ...
+sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.11;2.2.4 {test=[default(compile)]}
+sbt-chain: module revision found in cache: org.scalatest#scalatest_2.11;2.2.4
+	found org.scalatest#scalatest_2.11;2.2.4 in sbt-chain
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.2 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang#scala-reflect;2.11.2 ...
+Resolving org.scala-lang#scala-reflect;2.11.2 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.2
+	found org.scala-lang#scala-reflect;2.11.2 in sbt-chain
+	[2.11.2] org.scala-lang#scala-reflect;2.11.2
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [compile->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [compile->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
+Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
+	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->master]
+resolving dependencies for configuration 'provided'
+== resolving dependencies for default#lost-messages_2.11;1.0 [provided]
+resolving dependencies for configuration 'optional'
+== resolving dependencies for default#lost-messages_2.11;1.0 [optional]
+resolving dependencies for configuration 'compile-internal'
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile-internal]
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
+== resolving dependencies for default#lost-messages_2.11;1.0 [optional]
+== resolving dependencies for default#lost-messages_2.11;1.0 [provided]
+resolving dependencies for configuration 'runtime-internal'
+== resolving dependencies for default#lost-messages_2.11;1.0 [runtime-internal]
+== resolving dependencies for default#lost-messages_2.11;1.0 [runtime]
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
+== resolving dependencies for default#lost-messages_2.11;1.0 [optional]
+resolving dependencies for configuration 'test-internal'
+== resolving dependencies for default#lost-messages_2.11;1.0 [test-internal]
+== resolving dependencies for default#lost-messages_2.11;1.0 [test]
+== resolving dependencies for default#lost-messages_2.11;1.0 [runtime]
+== resolving dependencies for default#lost-messages_2.11;1.0 [compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->master(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.11->com.typesafe#config;1.2.1 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.3.11->com.typesafe.akka#akka-actor_2.11;2.3.11 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.3.11 [test->master]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->default(compile)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.2 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang#scala-reflect;2.11.2 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.2.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scalatest#scalatest_2.11;2.2.4 [test->master]
+== resolving dependencies for default#lost-messages_2.11;1.0 [optional]
+== resolving dependencies for default#lost-messages_2.11;1.0 [provided]
+resolving dependencies for configuration 'plugin'
+== resolving dependencies for default#lost-messages_2.11;1.0 [plugin]
+resolving dependencies for configuration 'sources'
+== resolving dependencies for default#lost-messages_2.11;1.0 [sources]
+resolving dependencies for configuration 'docs'
+== resolving dependencies for default#lost-messages_2.11;1.0 [docs]
+resolving dependencies for configuration 'pom'
+== resolving dependencies for default#lost-messages_2.11;1.0 [pom]
+resolving dependencies for configuration 'scala-tool'
+== resolving dependencies for default#lost-messages_2.11;1.0 [scala-tool]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-compiler;2.11.6 [scala-tool->default]
+Read from stdout: Resolving org.scala-lang#scala-compiler;2.11.6 ...
+Resolving org.scala-lang#scala-compiler;2.11.6 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.6 {scala-tool=[default, optional(default)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.6
+	found org.scala-lang#scala-compiler;2.11.6 in sbt-chain
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-compiler;2.11.6 [scala-tool->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-compiler;2.11.6 [scala-tool->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->default]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->runtime]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->optional(default)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang#scala-reflect;2.11.6 ...
+Resolving org.scala-lang#scala-reflect;2.11.6 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.6
+	found org.scala-lang#scala-reflect;2.11.6 in sbt-chain
+	[2.11.6] org.scala-lang#scala-reflect;2.11.6
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
+Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
+	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
+Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3
+	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 in sbt-chain
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-compiler;2.11.6 [scala-tool->master]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-compiler;2.11.6 [scala-tool->optional(default)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->master(compile)]
+Read from stdout: Resolving jline#jline;2.12.1 ...
+Resolving jline#jline;2.12.1 ...
+sbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {optional=[compile(*), master(compile)]}
+sbt-chain: module revision found in cache: jline#jline;2.12.1
+	found jline#jline;2.12.1 in sbt-chain
+== resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->compile(*)]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [scala-tool->default]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [scala-tool->runtime]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [scala-tool->compile]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [scala-tool->master]
+== resolving dependencies default#lost-messages_2.11;1.0->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)]
+	resolved ivy file produced in cache
+:: downloading artifacts ::
+	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar
+	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.11!akka-actor_2.11.jar
+	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
+	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.11!akka-testkit_2.11.jar
+	[NOT REQUIRED] org.scalatest#scalatest_2.11;2.2.4!scalatest_2.11.jar(bundle)
+	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.2!scala-reflect.jar
+	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)
+	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.6!scala-compiler.jar
+	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.6!scala-reflect.jar
+	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)
+	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)
+	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
+:: resolution report :: resolve 15524ms :: artifacts dl 1293ms
+	report for default#lost-messages_2.11;1.0 compile produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-compile.xml
+	report for default#lost-messages_2.11;1.0 runtime produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-runtime.xml
+	report for default#lost-messages_2.11;1.0 test produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-test.xml
+	report for default#lost-messages_2.11;1.0 provided produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-provided.xml
+	report for default#lost-messages_2.11;1.0 optional produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-optional.xml
+	report for default#lost-messages_2.11;1.0 compile-internal produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-compile-internal.xml
+	report for default#lost-messages_2.11;1.0 runtime-internal produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-runtime-internal.xml
+	report for default#lost-messages_2.11;1.0 test-internal produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-test-internal.xml
+	report for default#lost-messages_2.11;1.0 plugin produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-plugin.xml
+	report for default#lost-messages_2.11;1.0 sources produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-sources.xml
+	report for default#lost-messages_2.11;1.0 docs produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-docs.xml
+	report for default#lost-messages_2.11;1.0 pom produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-pom.xml
+	report for default#lost-messages_2.11;1.0 scala-tool produced in C:\Users\Salah\Desktop\activator-dist-1.3.5\lost-messages\target\resolution-cache\reports\default-lost-messages_2.11-scala-tool.xml
+	resolve done (15524ms resolve - 1293ms download)
+Read from stdout: Done updating.
+Done updating.
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 33 s, completed Jul 29, 2015 3:36:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Salah/Desktop/activator-dist-1.3.5/lost-messages/}lost-messages/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ce5a923, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jul 29, 2015 3:36:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Salah/Desktop/activator-dist-1.3.5/lost-messages/}lost-messages/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@3027a3dc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jul 29, 2015 3:54:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Salah/Desktop/activator-dist-1.3.5/lost-messages/}lost-messages/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@5594a025, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jul 29, 2015 3:54:58 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

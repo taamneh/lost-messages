@@ -165,7 +165,7 @@ class Receiver extends Actor {
 
   def receive = {
    case SimpleOrderedRedeliverer.Ackable(from, msg, uuid, seq) =>
-      if(_seqCounter >= seq) {
+      if(_seqCounter == seq) {
         // to avoid processing the old messages
         val goingToSendAck = shouldSendAck
         println( s"""  [NetworkDriver] got "$msg"; with seq = ${seq} ${if (goingToSendAck) "" else " ***NOT***"} going to send Ack this time""")
@@ -173,9 +173,6 @@ class Receiver extends Actor {
         if (goingToSendAck) {
           nextSeq
           sender() ! SimpleOrderedRedeliverer.Ack(uuid)
-        }
-        else {
-          context.system.scheduler.scheduleOnce(5.seconds, self, SimpleOrderedRedeliverer.Ackable(from, msg, uuid, seq))
         }
       }
       else{
