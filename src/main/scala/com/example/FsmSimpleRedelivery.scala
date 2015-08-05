@@ -6,7 +6,7 @@ package com.example.redelivery
 
 import akka.actor.FSM.Event
 import akka.actor._
-import com.example.redelivery.SimpleOrderedRedeliverer.CreateNetwork
+import com.example.redelivery.SimpleOrderedRedeliverer.{Deliver, CreateNetwork}
 import scala.concurrent.duration._
 import scala.concurrent.forkjoin.ThreadLocalRandom
 import java.util.UUID
@@ -16,7 +16,6 @@ object SimpleOrderedRedeliverer {
    * Props for creating a [[SimpleOrderedRedeliverer]].
    */
   def props(retryTimeout: FiniteDuration) = Props(classOf[SimpleOrderedRedeliverer], retryTimeout)
-
   /*
    * Messages exchanged with the requester of the delivery.
    */
@@ -31,7 +30,7 @@ object SimpleOrderedRedeliverer {
    * Messages exchanged with the “deliveree”.
    */
   case class Ackable(from: ActorRef, msg: Any, uuid: UUID, seq: Long)
-  case class Ack(uuid: UUID)
+  case class Ack( seq: Long)
 
   /*
    * Various states the [[SimpleOrderedRedeliverer]] can be in.
@@ -97,6 +96,7 @@ class SimpleOrderedRedeliverer(retryTimeout: FiniteDuration) extends Actor with 
    */
   def process(request: Deliver, requester: ActorRef, seq: Long): State = {
     request.to ! Ackable(requester, request.msg, request.uuid, seq)
+    println( s"""  [Messenger] will send "${request.msg}"; with seq = ${seq} """)
     setTimer(RetryTimer, Retry, retryTimeout, repeat = false)
     goto(AwaitingAck) using LastRequest(request, requester, seq)
   }
@@ -124,9 +124,9 @@ class SimpleOrderedRedeliverer(retryTimeout: FiniteDuration) extends Actor with 
      * cancel the retry timer, notify original requester with [[Delivered]] message,
      * and turn [[Idle]] again.
      */
-    case Event(Ack(uuid), LastRequest(request, requester, seq)) if uuid == request.uuid =>
+    case Event(Ack(seq1), LastRequest(request, requester, seq2)) if seq1 == seq2 =>
       cancelTimer(RetryTimer)
-      requester ! Delivered(uuid)
+      requester ! Delivered(request.uuid)
       goto(Idle) using NoData
 
     /*
@@ -161,7 +161,7 @@ class Receiver extends Actor {
     ret
   }
 
-  def shouldSendAck = ThreadLocalRandom.current.nextDouble() < 0.25
+  def shouldSendAck = true //ThreadLocalRandom.current.nextDouble() < 0.25
 
   def receive = {
    case SimpleOrderedRedeliverer.Ackable(from, msg, uuid, seq) =>
@@ -172,85 +172,30 @@ class Receiver extends Actor {
         // Send a [[SimpleOrderedRedeliverer.Ack]] -- if they're lucky!
         if (goingToSendAck) {
           nextSeq
-          sender() ! SimpleOrderedRedeliverer.Ack(uuid)
+          sender() ! SimpleOrderedRedeliverer.Ack(seq)
         }
       }
-      else{
+      else if(_seqCounter > seq){
         println(s"""  [NetworkDriver] ignore old messages with seq ${seq}""")
+        sender() !  SimpleOrderedRedeliverer.Ack(seq)
       }
   }
 }
 
-object Requester {
-  /**
-   * Props for creating a [[Requester]].
-   */
-  def props = Props(classOf[Requester])
 
-  /**
-   * Requester-private message used to drive the simulation.
-   */
-  private case object Tick
-}
-
-class Requester extends Actor {
-  import Requester._
-  import context.dispatcher
-
-  /*
-   * Create a [[SimpleOrderedRedeliverer]] and a [[Receiver]].
-   */
-  val redeliverer = context.actorOf(SimpleOrderedRedeliverer.props(retryTimeout = 3.seconds))
-  val receiver = context.actorOf(Receiver.props)
-
-  /*
-   * One message would be quite boring, let's pick a random of the three!
-   */
-  //val messages = List("Hello!", "Ping!", "Howdy!")
-  val messages = List(CreateNetwork);
-
-  /*
-   * Start ticking!
-   */
-  self ! Tick
-
-  /**
-   * Make a new request every anywhere-between-1-and-10 seconds.
-   */
-  def nextTickIn: FiniteDuration = (1.0 + ThreadLocalRandom.current.nextDouble() * 9.0).seconds
-
-  def receive = {
-    case Tick =>
-      val msg = util.Random.shuffle(messages).head
-      val uuid = UUID.randomUUID()
-      println(s"""[NetRunner] requesting ("$msg", $uuid) to be sent to [NetworkDriver]...""")
-
-      /*
-       * Make the actual request...
-       */
-      redeliverer ! SimpleOrderedRedeliverer.Deliver(receiver, msg, uuid)
-
-      /*
-       * ... and schedule a new [[Tick]].
-       */
-      context.system.scheduler.scheduleOnce(nextTickIn, self, Tick)
-
-    /*
-     * This case is used for displaying [[SimpleOrderedRedeliverer.WillTry]] and [[SimpleOrderedRedeliverer.Delivered]]
-     * and [[SimpleOrderedRedeliverer.Busy]] messages.
-     */
-    case msg => println(s"[NetRunner] got $msg")
-  }
-
-}
 
 object FsmSimpleRedelivery extends App {
 
   val system = ActorSystem()
-
   /*
    * Start a new [[Requester]] actor.
    */
-  system.actorOf(Requester.props)
+  val redeliverer = system.actorOf(SimpleOrderedRedeliverer.props(retryTimeout = 3.seconds))
+  val receiver = system.actorOf(Receiver.props)
+  val uuid = UUID.randomUUID()
+
+  redeliverer ! Deliver(receiver, CreateNetwork, uuid)
+
+  //system.actorOf(Requester.props(redeliverer, receiver))
 
 }
